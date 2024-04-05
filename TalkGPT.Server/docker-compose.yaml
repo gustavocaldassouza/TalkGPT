@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_USER: TALK
+      MYSQL_PASSWORD: Password123
+      MYSQL_DATABASE: TALKGPT
+      MYSQL_RANDOM_ROOT_PASSWORD: true
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/var/lib/mysql
