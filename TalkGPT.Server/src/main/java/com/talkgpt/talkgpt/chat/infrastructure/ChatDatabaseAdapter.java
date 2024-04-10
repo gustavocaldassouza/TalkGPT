@@ -97,7 +97,7 @@ public class ChatDatabaseAdapter implements ChatDatabase {
   @Override
   public Long getLastMessageId() {
     try {
-      String sql = "SELECT COALESCE(MAX(ID), 1) FROM MESSAGE";
+      String sql = "SELECT COALESCE(MAX(ID), 0) FROM MESSAGE";
       return jdbcTemplate.queryForObject(sql, Long.class);
     } catch (Exception e) {
       System.out.println("Error: " + e.getMessage());
