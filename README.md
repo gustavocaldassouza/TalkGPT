@@ -33,9 +33,7 @@ TalkGPT is an innovative interface that bridges the gap between OpenAI products,
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
 3. Run `docker-compose up` to build and start the services.
-4. Access the UI service at `http://localhost:5173`.
-5. The web service will be available at `http://localhost:3000`.
-6. The database will be available at `http://localhost:3306`.
+4. Access the service at `http://localhost:5173`.
 
 ## Services
 
